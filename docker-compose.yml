@@ -1,0 +1,17 @@
+services:
+  backend:
+    restart: on-failure
+    build:
+      context: ./main
+    ports: 
+      - 1338:1338
+    depends_on:
+      - db
+  db:
+    restart: on-failure
+    build:
+      context: ./main
+    volumes:
+      - db_data:/
+volumes:
+  postgres_data:

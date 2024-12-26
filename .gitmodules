@@ -1,0 +1,3 @@
+[submodule "DBMS"]
+	path = DBMS
+	url = https://github.com/RezepovPeter/DBMS
